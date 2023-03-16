@@ -111,7 +111,8 @@
 
   /* Slide show codes goes here */
 .header{
-    background-image: url("/atwork3.webp");
+    /* background-image: url("/atwork3.webp"); */
+    background-color: #bad1fa;
     background-repeat: no-repeat;
     background-size: cover;
     height: 48vh;
@@ -150,7 +151,7 @@
     float: left;
 } */
 #image-2{
-    width: 16vw;
+    width: 26vw;
     margin-left: 80%;
     /* float: right; */
 }
