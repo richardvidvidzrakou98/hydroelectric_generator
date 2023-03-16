@@ -1,9 +1,15 @@
 
+*{
+    /* overflow: hidden; */
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #cfcece;
+    height: 110px;
+    background-color: #ccd9e8;
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
+    margin-bottom: -35px;
   }
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -14,6 +20,8 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin-right: 15px;
+    margin-top: 28px;
   }
   /* .topnav a img{
     width: 50px;
@@ -39,16 +47,20 @@
 
   /* Style the search box inside the navigation bar */
 .topnav input[type=text] {
+    width: 40%;
+    height: 33px;
     float: left;
     padding: 6px;
+    padding-left: 10px;
     border: none;
-    margin-top: 8px;
-    margin-left: 16px;
+    margin-top: 33px;
+    margin-left: 27px;
     font-size: 17px;
+    border-radius: 5px;
   }
   
   /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
-  @media screen and (max-width: 600px) {
+  /* @media screen and (max-width: 600px) {
     .topnav a, .topnav input[type=text] {
       float: none;
       display: block;
@@ -60,7 +72,7 @@
     .topnav input[type=text] {
       border: 1px solid #ccc;
     }
-  }
+  } */
   
 
    .h1-header{
@@ -70,7 +82,7 @@
   }
   .grouped-content{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: #ddd; */
   }
 
@@ -94,5 +106,166 @@
   .image-1{
     width: 350px;
     height: 280px;
-    margin-left: 70px;
+    margin-left: 130px;
   }
+
+  /* Slide show codes goes here */
+.header{
+    background-image: url("/atwork3.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 48vh;
+    margin-top: 0;
+}
+.grouped-content{
+    /* text-align: ; */
+    font-size: 20px;
+    /* display: inline-block; */
+    justify-content: center;
+    align-items: center;
+   
+}
+  
+.paragraphs{
+    padding-left: 30px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.first-image{
+    height: 50vh;
+    margin-left: 38%;
+    /* float: right; */
+}
+.firsts-image{
+    height: 35vh;
+    margin-left: 38%;
+}
+.second-images{
+    display: flex;
+    float: left;
+    margin-left: -23%;
+    margin-right: -70%;
+}
+/* #image-1{
+    float: left;
+} */
+#image-2{
+    width: 16vw;
+    margin-left: 80%;
+    /* float: right; */
+}
+#image-3{
+    float: right;
+} 
+
+.footer-section{
+    width: 100%;
+    height: 16vh;
+    background-color: black;
+    padding-top: 4%;
+}
+
+.copyright{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+/* Adding responsiveness */
+@media screen and (max-width: 00px) {
+    .topnav input[type=text] {
+        width: 30%;
+        height: 33px;
+        float: left;
+        padding: 6px;
+        padding-left: 10px;
+        border: none;
+        margin-top: 33px;
+        margin-left: 27px;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+    /* .topnav input[type=text] {
+      border: 1px solid #ccc;
+    } */
+}
+
+
+  @media only screen and (max-width: 600px) {
+    *{
+        overflow-x: hidden;
+    }
+    body {
+      background-color: lightblue;
+      overflow: hidden;
+      
+    }
+
+    .h1-header{
+        letter-spacing: 1px;
+        font-size: 26px;
+        text-align: center;
+      }
+
+      .second-images{
+        /* display: block; */
+        /* display: inline-flex; */
+        /* float: left; */
+        /* margin-left: -23%;
+        margin-right: -10%; */
+    }
+
+      #image-3{
+        width: 70px;
+        height: 40px;
+        display: none;
+        /* margin-left: -10%; */
+     /* float: right;  */
+     }  
+
+     #image-1{
+        width: 100%;
+        height: 40vh;
+        margin-left: -1%;
+        /* display: none; */
+        /* margin-left: -10%; */
+     /* float: right;  */
+     }  
+
+     #image-2{
+        width: 100%;
+        margin-left: 3%;
+        /* float: left;  */
+     }  
+
+    /* .grouped-content{
+        padding-left: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    } */
+
+    .paragraphs{
+        padding-left: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .last-paragraph{
+        margin-top: 26%;
+        margin-left: 0px;
+    }
+
+    .first-image{
+        height: 40vh;
+        width: 100%;
+        margin-left: 1%;
+        /* float: right; */
+    }
+
+    .footer-section{
+        width: 100%;
+        height: 10vh;
+        background-color: black;
+        padding-top: 4%;
+    }
+  }
+  
